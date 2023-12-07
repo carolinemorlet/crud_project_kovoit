@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true
+  },
+  "projects": {
+    "library-test": {
+      "type": "library",
+      "root": "libs/library-test",
+      "entryFile": "index",
+      "sourceRoot": "libs/library-test/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/library-test/tsconfig.lib.json"
+      }
+    }
+  }
+}
